@@ -1,106 +1,81 @@
-
- body{
-	background:#B3B3B3;
+/*
+  ========================================
+  Header, Footer, Nav Menu
+  ========================================
+*/
+body{
+	background:#E3E3E3;
 	font-size: 150%;
-
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 
-header{
+.primary-header{
 	display: block;
-	background: #00b7ea;
+	background:#E3E3E3;
 	text-align: center;
-	background-image: url('../images/banner.jpg');
+/*	background-image: url('../images/banner.jpg');*/
 	padding-top: 55px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100px;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
 }
 
-footer{
-	background: #666666;
+.primary-footer{
+	background:#E3E3E3;
 	text-align: center;
-	background-image: url('../images/banner.jpg');
+	position: absolute;
+/*	background-image: url('../images/banner.jpg');*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100px;
-	clear: both;
-	color: #FFFFFF;
+	color: #F6F6F8;
+	top: 900px;
+	width: 100%;
+	left: 0px;
 }
 
-
-.left{
-	display: inline-block;
-	float: left;
-	width: 25vw;
-	padding: 20px;
-	background: #666666;
-	height: 100vh;
-}
-
-.right
-{
-	display: inline-block;
-	width: 60%;
-	padding: 10px;
-	margin-left: 20px;
-}
-
-section p{
-	font-style: italic;
-	font-size: 125%;
-	text-indent: 50px;
-}
-
-ul{
-	list-style: none;
-	padding-left: 0;
-	font-size: 110%;
-	font-style: italic;
-	word-break: break-all;
-}
-
-li{
-	width: 350px;
-
-}
-
-li:nth-child(1) {
-	list-style-image: url("../images/phone.png");
-	list-style-type: none;
-	list-style-position: inside;
-}
-
-li:nth-child(2){
-	list-style-image: url("../images/email.png");
-	list-style-type: none;
-	list-style-position: inside;
-}
-
-li:nth-child(3){
-	list-style-image: url("../images/github.png");
-	list-style-type: none;
-	list-style-position: inside;
-}
-
-nav{
+.main-menu{
 	font-variant: small-caps;
-	font-family: Arial, "Times New Roman", serif;
 	font-size: 150%;
+	position: absolute;
+	top: 0px;
+	left: 720px;
+	transition: border-radius .5s ease-in 1s;
+	width: 700px;
 }
 
-nav a{
-	width: 22%;
+.main-menu a{
 	display: inline-block;
-	background: #FFFFFF;
+	color: #C60021;
+	float: left;
+	padding: 10px;
+	
 }
 
-h3{
-	color: #FFFFFF;
-	text-decoration: underline;
-	text-decoration-style: solid;
+a:hover{
+  	border-radius: 40%;
 }
 
-img{
+
+
+a:visited{
+	color: #C60021;
+}
+
+.primary-footer a{
+	color: #C60021;
+}
+
+/*
+  ========================================
+  Bio Picture Filp Card
+  ========================================
+*/
+.bio{
 	display: block;
 	width: 200px;
 	height: 350px;
@@ -110,13 +85,182 @@ img{
 	margin-right: auto;
 }
 
-a:visited{
-	color: red;
+.bio-card {
+    cursor: pointer;
+    width: auto;
+	height: auto;
+    perspective: 600px;
 }
 
-footer a{
-	color: #FFFFFF;
+.bio-pic {
+	width: 200px;
+	height: 360px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+	top: 300px;
+	left: 550px;
+}
+
+.bio-pic:hover {
+  transform: rotateY(180deg);
+}
+
+.bio-pic .front-card {
+	box-sizing: border-box;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    width: 200px;
+	height: 360px;
+    position: absolute;
+}
+
+.bio-pic .back-card {
+    background: #FFFFFF;
+	box-sizing: border-box;
+    color: #0087cc;
+    line-height: 5px;
+    text-align: left;
+	width: 200px;
+	height: 350px;
+	font-size: 50%;
+	border-radius: 100%;
+	border:2px solid #000000;
+    transform: rotateY(180deg);
+}
+
+.caption
+{
+	width: 250px;
+	color: #C60021;
+	text-align: center;
+	font-size: 45%;
+	font-style: italic;
+	text-decoration: under
+}
+
+.contact-info{
+	list-style: none;
+	padding-left: 0;
+	font-size: 110%;
+	font-style: italic;
+}
+
+.contact-heading{
+	color: #000000;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	padding-top: 100px;
+	padding-bottom: 0px;
+	padding-left: 35px;
+}
+
+.item
+{
+	width: 300px;
+	padding-left: 10px;
+}
+
+.item:nth-child(1) {
+	list-style-image: url("../images/phone.png");
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+.item:nth-child(2){
+	list-style-image: url("../images/email.png");
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+.item:nth-child(3){
+	list-style-image: url("../images/github.png");
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+/*
+  ========================================
+  Main Page Content
+  ========================================
+*/
+
+.top-left{
+	position: absolute;
+	width: 600px;
+	color: #C60021;
+	top: 60px;
+	left: 20px;
+	font-size: 95%;
+	text-indent: 50px;
+}
+
+.top-right{
+	position: absolute;
+	width: auto;
+	left: 730px;
+	top: 80px;
+}
+
+.javascript{
+	width: 600px;
+	height: 275px;
 }
 
 
+.middle-left{
+	position: absolute;
+	width: auto;
+	top: 230px;
+	left: 200px;
+}
 
+.html5{
+	width: 150px;
+	height: 200px;
+}
+
+.bottom-right{
+	position: absolute;
+	width: 300px;
+	color: #C60021;
+	top: 400px;
+	left: 950px;
+}
+
+.bottom-left{
+	position: absolute;
+	width: auto;
+	top: 430px;
+	left: 50px;
+}
+
+.css3{
+	width: 400px;
+	height: 475px;
+}
+
+
+.skills{
+	list-style:circle;
+	padding-left: 30px;
+	font-size: 110%;
+	font-style: italic;
+	padding-top: 0px;
+	margin-top: 5px;
+	width: auto;
+}
+
+.skills-heading {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-decoration: underline;
+	font-style: oblique;
+	width: auto;
+}
+
+.technical-skill
+{
+	width: 300px;
+	padding-left: 10px;
+}
