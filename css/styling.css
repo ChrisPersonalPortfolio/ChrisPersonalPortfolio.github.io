@@ -43,9 +43,9 @@ body{
 	font-size: 150%;
 	position: absolute;
 	top: 0px;
-	left: 720px;
+	left: 580px;
 	transition: border-radius .5s ease-in 1s;
-	width: 700px;
+	width: 619px;
 }
 
 .main-menu a{
@@ -79,7 +79,7 @@ a:visited{
 	display: block;
 	width: 200px;
 	height: 350px;
-	border-radius: 50%;
+/*	border-radius: 50%;*/
 	border:2px solid #000000;
 	margin-left: auto;
 	margin-right: auto;
@@ -98,12 +98,15 @@ a:visited{
     position: absolute;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-	top: 300px;
-	left: 550px;
+	left: 950px;
+	top: 80px;
 }
 
 .bio-pic:hover {
-  transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .bio-pic .front-card {
@@ -124,16 +127,19 @@ a:visited{
 	width: 200px;
 	height: 350px;
 	font-size: 50%;
-	border-radius: 100%;
+/*	border-radius: 100%;*/
 	border:2px solid #000000;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .caption
 {
-	width: 250px;
+	width: 220px;
 	color: #C60021;
-	text-align: center;
+	text-align: left;
 	font-size: 45%;
 	font-style: italic;
 	text-decoration: under
@@ -150,14 +156,13 @@ a:visited{
 	color: #000000;
 	text-decoration: underline;
 	text-decoration-style: solid;
-	padding-top: 100px;
 	padding-bottom: 0px;
 	padding-left: 35px;
 }
 
 .item
 {
-	width: 300px;
+	width: 200px;
 	padding-left: 10px;
 }
 
@@ -187,24 +192,21 @@ a:visited{
 
 .top-left{
 	position: absolute;
-	width: 600px;
-	color: #C60021;
-	top: 60px;
-	left: 20px;
-	font-size: 95%;
-	text-indent: 50px;
-}
-
-.top-right{
-	position: absolute;
 	width: auto;
-	left: 730px;
-	top: 80px;
+	top: 0px;
+	left: 20px;
+	
 }
 
-.javascript{
-	width: 600px;
-	height: 275px;
+.middle-page{
+	position: absolute;
+	width: 540px;
+	left: 340px;
+	top: 200px;
+	color: #C60021;
+	font-size: 150%;
+	text-indent: 50px;
+	text-align: center;
 }
 
 
@@ -212,32 +214,27 @@ a:visited{
 	position: absolute;
 	width: auto;
 	top: 230px;
-	left: 200px;
-}
-
-.html5{
-	width: 150px;
-	height: 200px;
+	left: 40px;
 }
 
 .bottom-right{
 	position: absolute;
-	width: 300px;
+	width: auto;
 	color: #C60021;
-	top: 400px;
+	top: 440px;
 	left: 950px;
 }
 
 .bottom-left{
 	position: absolute;
 	width: auto;
-	top: 430px;
-	left: 50px;
+	top: 530px;
+	left: 40px;
 }
 
 .css3{
-	width: 400px;
-	height: 475px;
+	width: 200px;
+	height: 255px;
 }
 
 
@@ -256,7 +253,7 @@ a:visited{
 	margin-bottom: 0px;
 	text-decoration: underline;
 	font-style: oblique;
-	width: auto;
+	width: 250px;
 }
 
 .technical-skill
