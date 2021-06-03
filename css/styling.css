@@ -22,6 +22,7 @@ body{
 	width: 100%;
 	top: 0px;
 	left: 0px;
+	border-bottom: 2px solid #000000;
 }
 
 .primary-footer{
@@ -36,6 +37,7 @@ body{
 	top: 900px;
 	width: 100%;
 	left: 0px;
+	border-top: 2px solid #000000;
 }
 
 .main-menu{
@@ -77,8 +79,8 @@ a:visited{
 */
 .bio{
 	display: block;
-	width: 200px;
-	height: 350px;
+	width: 175px;
+	height: 325px;
 /*	border-radius: 50%;*/
 	border:2px solid #000000;
 	margin-left: auto;
@@ -93,13 +95,13 @@ a:visited{
 }
 
 .bio-pic {
-	width: 200px;
-	height: 360px;
+	width: 175px;
+	height: 325px;
     position: absolute;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-	left: 950px;
-	top: 80px;
+	left: 1050px;
+	top: 163px;
 }
 
 .bio-pic:hover {
@@ -113,8 +115,8 @@ a:visited{
 	box-sizing: border-box;
     backface-visibility: hidden;
     border-radius: 6px;
-    width: 200px;
-	height: 360px;
+    width: 175px;
+	height: 325px;
     position: absolute;
 }
 
@@ -124,9 +126,9 @@ a:visited{
     color: #0087cc;
     line-height: 5px;
     text-align: left;
-	width: 200px;
-	height: 350px;
-	font-size: 50%;
+	width: 175px;
+	height: 325px;
+	font-size: 45%;
 /*	border-radius: 100%;*/
 	border:2px solid #000000;
 	-webkit-transform: rotateY(180deg);
@@ -139,10 +141,9 @@ a:visited{
 {
 	width: 220px;
 	color: #C60021;
-	text-align: left;
-	font-size: 45%;
+	text-align: justify;
+	font-size: 42%;
 	font-style: italic;
-	text-decoration: under
 }
 
 .contact-info{
@@ -157,13 +158,14 @@ a:visited{
 	text-decoration: underline;
 	text-decoration-style: solid;
 	padding-bottom: 0px;
-	padding-left: 35px;
+	padding-left: 25px;
+	padding-top: 70px;
 }
 
 .item
 {
 	width: 200px;
-	padding-left: 10px;
+	padding-left: 5px;
 }
 
 .item:nth-child(1) {
@@ -193,16 +195,20 @@ a:visited{
 .top-left{
 	position: absolute;
 	width: auto;
-	top: 0px;
+	top: 180px;
 	left: 20px;
 	
+}
+.javascript{
+	height: 150px;
+	width: auto;
 }
 
 .middle-page{
 	position: absolute;
 	width: 540px;
-	left: 340px;
-	top: 200px;
+	left: 400px;
+	top: 280px;
 	color: #C60021;
 	font-size: 150%;
 	text-indent: 50px;
@@ -213,7 +219,7 @@ a:visited{
 .middle-left{
 	position: absolute;
 	width: auto;
-	top: 230px;
+	top: 340px;
 	left: 40px;
 }
 
@@ -221,14 +227,14 @@ a:visited{
 	position: absolute;
 	width: auto;
 	color: #C60021;
-	top: 440px;
-	left: 950px;
+	top: 490px;
+	left: 1050px;
 }
 
 .bottom-left{
 	position: absolute;
 	width: auto;
-	top: 530px;
+	top: 640px;
 	left: 40px;
 }
 
@@ -241,7 +247,7 @@ a:visited{
 .skills{
 	list-style:circle;
 	padding-left: 30px;
-	font-size: 110%;
+	font-size: 96%;
 	font-style: italic;
 	padding-top: 0px;
 	margin-top: 5px;
